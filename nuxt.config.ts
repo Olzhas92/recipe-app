@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
+
   experimental: {
     scanPageMeta: 'after-resolve',
     sharedPrerenderData: false,
@@ -18,13 +19,17 @@ export default defineNuxtConfig({
       }
     }
   },
+
   features: {
     inlineStyles: true
   },
+
   unhead: {
     renderSSRHeadOptions: {
       omitLineBreaks: false
     }
   },
-  devtools: { enabled: true }
+
+  devtools: { enabled: true },
+  modules: ['@nuxtjs/google-fonts', '@nuxt/icon', '@nuxt/image']
 })
