@@ -1,12 +1,12 @@
 <script setup lang="ts">
-    definePageMeta({
-        layout: 'default',
-    })
+
 </script>
 
 <template>
     <div>
-        <h1>Home Page</h1>
+        <h2>Login Header</h2>
+        <slot />
+        <h2>Login Footer</h2>
     </div>
 </template>
 
